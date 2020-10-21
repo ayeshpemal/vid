@@ -38,7 +38,7 @@ def main():
      su = False 
      ydl_opts = {
      'writesubtitles':su,
-     "outtmpl": "/storage/extSdCard/%(title)s.%(ext)s", 
+     "outtmpl": "/storage/extSdCard/android/%(title)s.%(ext)s", 
      'format':coad,}
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
      ydl.download([url])
@@ -47,7 +47,7 @@ def main():
      print("\033[94m  Download Complete")
 
 
-    cho = input("\033[1;37m  Do you wont use again Y or N :-  ")
+    cho = input("\033[1;37m  Do u wont use again Y or N :-  ")
     if cho == "y" or cho == "Y":
         main()
          
