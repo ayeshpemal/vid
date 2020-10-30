@@ -38,7 +38,7 @@ def main():
      su = False 
      ydl_opts = {
      'writesubtitles':su,
-     "outtmpl": "/storage/extSdCard/android/%(title)s.%(ext)s", 
+     "outtmpl": "/storage/DEEA-264E/android/%(title)s.%(ext)s", 
      'format':coad,}
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
      ydl.download([url])
